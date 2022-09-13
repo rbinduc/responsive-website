@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+}
+.nav-container {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+h1 {
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: "Questrial", sans-serif;
+}
+button {
+  height: 2rem;
+  width: 150px;
+  padding: 1rem;
+  background-color: #fd227d;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.icons span {
+  background-color: rgb(246, 241, 241);
+  padding: 10px;
+  border-radius: 5px;
+}
+.info {
+  background-image: url(/images/sweetBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 span {
+  color: #fd227d;
+}
+.info p {
+  margin: 1rem 0;
+}
+article {
+  background-color: #e2fdf5;
+  width: calc(100% / 3.3);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+article .image {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin: 1rem 0;
+  line-height: 1.8rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 992px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.menu-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    padding: 1.5rem;
+  }
+  article {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .info {
+    padding: 2rem;
+  }
+  .menu-bar {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
